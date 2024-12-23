@@ -1,0 +1,31 @@
+{
+  "files.associations": {
+    "bmi088middleware.h": "c",
+    "bmi088driver.h": "c",
+    "cmsis_os.h": "c",
+    "can.h": "c",
+    "attituderesolve.h": "c",
+    "bmi088.h": "c",
+    "bmi088reg.h": "c",
+    "spi.h": "c",
+    "bmi088def.h": "c",
+    "imu_data.h": "c",
+    "bsp_can.h": "c",
+    "cvector.h": "c",
+    "bsp_time.h": "c",
+    "can_rxtx.h": "c",
+    "mahonyahrs.h": "c",
+    "stdint.h": "c",
+    "vectors.h": "c",
+    "usb_device.h": "c",
+    "usbd_def.h": "c",
+    "usbd_conf.h": "c",
+    "bsp_usb.h": "c",
+    "circular_queue.h": "c",
+    "usbd_cdc_if.h": "c",
+    "usb_test.h": "c",
+    "stdarg.h": "c",
+    "string.h": "c"
+  },
+  "C_Cpp.default.compilerPath": "D:\\Code\\MinGW\\bin\\gcc.exe"
+}
