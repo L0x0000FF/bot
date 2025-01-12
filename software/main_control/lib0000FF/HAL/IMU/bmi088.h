@@ -1,5 +1,5 @@
-#ifndef __BMI088_H
-#define __BMI088_H
+#ifndef _BMI088_H
+#define _BMI088_H
 
 #include <stdint.h>
 

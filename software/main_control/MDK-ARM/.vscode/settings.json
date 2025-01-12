@@ -25,7 +25,9 @@
     "usbd_cdc_if.h": "c",
     "usb_test.h": "c",
     "stdarg.h": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "bsp_tim.h": "c",
+    "buzzer.h": "c"
   },
   "C_Cpp.default.compilerPath": "D:\\Code\\MinGW\\bin\\gcc.exe"
 }

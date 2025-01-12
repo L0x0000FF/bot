@@ -1,12 +1,17 @@
-main_control/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
+main_control/bsp_tim.o: ..\lib0000FF\BSP\bsp_tim.c \
+  ..\lib0000FF\BSP\bsp_tim.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\lib0000FF\Common\cvector.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\string.h ..\Core\Inc\tim.h \
+  ..\Core\Inc\main.h ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \
@@ -35,23 +40,4 @@ main_control/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
-  ..\Core\Inc\FreeRTOSConfig.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
-  ..\Core\Inc\can.h ..\Core\Inc\i2c.h ..\Core\Inc\spi.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\usart.h ..\USB_DEVICE\App\usb_device.h \
-  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
-  ..\USB_DEVICE\Target\usbd_conf.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\string.h ..\Core\Inc\gpio.h \
-  ..\lib0000FF\BSP\bsp_tim.h ..\lib0000FF\Common\cvector.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h

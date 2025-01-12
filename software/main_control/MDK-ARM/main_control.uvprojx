@@ -1360,6 +1360,11 @@
               <FileType>1</FileType>
               <FilePath>..\lib0000FF\BSP\bsp_usb.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\BSP\bsp_tim.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1476,6 +1481,11 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+            <File>
+              <FileName>buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\HAL\buzzer.c</FilePath>
             </File>
           </Files>
         </Group>
