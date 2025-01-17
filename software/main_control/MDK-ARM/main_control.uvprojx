@@ -1365,6 +1365,11 @@
               <FileType>1</FileType>
               <FilePath>..\lib0000FF\BSP\bsp_tim.c</FilePath>
             </File>
+            <File>
+              <FileName>bsp_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\BSP\bsp_i2c.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
