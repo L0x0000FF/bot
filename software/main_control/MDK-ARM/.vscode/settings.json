@@ -28,7 +28,9 @@
     "string.h": "c",
     "bsp_tim.h": "c",
     "buzzer.h": "c",
-    "bsp_i2c.h": "c"
+    "bsp_i2c.h": "c",
+    "as5600.h": "c",
+    "common.h": "c"
   },
   "C_Cpp.default.compilerPath": "D:\\Code\\MinGW\\bin\\gcc.exe"
 }

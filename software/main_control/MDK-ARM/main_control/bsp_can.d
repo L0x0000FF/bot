@@ -41,4 +41,4 @@ main_control/bsp_can.o: ..\lib0000FF\BSP\bsp_can.c \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
-  ..\lib0000FF\BSP\bsp_time.h
+  ..\lib0000FF\BSP\bsp_time.h ..\Core\Inc\tim.h

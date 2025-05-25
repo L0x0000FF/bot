@@ -50,4 +50,6 @@ main_control/usb_test.o: ..\lib0000FF\APP\usb_test.c \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
   ..\USB_DEVICE\App\usbd_cdc_if.h ..\lib0000FF\HAL\IMU\bmi088.h \
   ..\lib0000FF\HAL\IMU\imu_data.h ..\lib0000FF\HAL\IMU\MahonyAHRS.h \
-  ..\Core\Inc\spi.h ..\Core\Inc\tim.h
+  ..\Core\Inc\spi.h ..\Core\Inc\tim.h ..\lib0000FF\HAL\as5600.h \
+  ..\lib0000FF\BSP\bsp_i2c.h ..\Core\Inc\i2c.h \
+  ..\lib0000FF\Common\cvector.h

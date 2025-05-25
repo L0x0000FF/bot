@@ -29,6 +29,10 @@
 #include "can_rxtx.h"
 #include "usb_test.h"
 #include "bsp_usb.h"
+#include "bsp_can.h"
+#include "bsp_i2c.h"
+#include "bsp_time.h"
+#include "as5600.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -144,6 +148,8 @@ void StartDefaultTask(void *argument)
   /* USER CODE BEGIN StartDefaultTask */
   app_usb_init();
 	BSP_USB_Init();
+  BSP_I2C_Init();
+  BSP_time_init();
   /* Infinite loop */
   for(;;)
   {
@@ -193,7 +199,8 @@ void StartCANTask(void *argument)
   {
     app_CAN_rxtx_main();
     BSP_USB_Loop();
-    vTaskDelayUntil(&currentTimeCAN, 1);
+    BSP_time_update();
+    vTaskDelayUntil(&currentTimeCAN, 50);
   }
   /* USER CODE END StartCANTask */
 }

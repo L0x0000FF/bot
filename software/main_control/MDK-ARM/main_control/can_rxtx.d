@@ -41,4 +41,14 @@ main_control/can_rxtx.o: ..\lib0000FF\APP\can_rxtx.c \
   ..\lib0000FF\Common\cvector.h \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\string.h
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\lib0000FF\BSP\bsp_usb.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\USB_DEVICE\App\usb_device.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
+  ..\USB_DEVICE\Target\usbd_conf.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
+  ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
+  ..\USB_DEVICE\App\usbd_cdc_if.h

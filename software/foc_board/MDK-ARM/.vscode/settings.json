@@ -1,0 +1,24 @@
+{
+  "files.associations": {
+    "bsp_time.h": "c",
+    "bsp_can.h": "c",
+    "string.h": "c",
+    "as5600.h": "c",
+    "bsp_i2c.h": "c",
+    "can_rxtx.h": "c",
+    "stdint.h": "c",
+    "can.h": "c",
+    "foc_driver.h": "c",
+    "bsp_tim.h": "c",
+    "freertos.h": "c",
+    "main.h": "c",
+    "cmsis_os.h": "c",
+    "task.h": "c",
+    "bsp_adc.h": "c",
+    "bitset": "c",
+    "chrono": "c",
+    "algorithm": "c",
+    "__bit_reference": "c",
+    "unordered_map": "c"
+  }
+}

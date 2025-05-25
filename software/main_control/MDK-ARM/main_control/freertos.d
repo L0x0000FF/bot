@@ -63,4 +63,6 @@ main_control/freertos.o: ..\Core\Src\freertos.c \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
   ..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
-  ..\USB_DEVICE\App\usbd_cdc_if.h
+  ..\USB_DEVICE\App\usbd_cdc_if.h ..\lib0000FF\BSP\bsp_i2c.h \
+  ..\Core\Inc\i2c.h ..\lib0000FF\BSP\bsp_time.h \
+  ..\lib0000FF\HAL\as5600.h
