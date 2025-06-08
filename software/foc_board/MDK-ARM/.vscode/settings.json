@@ -19,6 +19,11 @@
     "chrono": "c",
     "algorithm": "c",
     "__bit_reference": "c",
-    "unordered_map": "c"
+    "unordered_map": "c",
+    "drv8313.h": "c",
+    "bsp_gpio.h": "c",
+    "foc.h": "c",
+    "stdbool.h": "c",
+    "stdlib.h": "c"
   }
 }

@@ -1,0 +1,42 @@
+[Signal 1]
+DispName=(GPIOA_IDR & 0x00000100) >> 8
+PlotType=0
+Color=255
+ValHex=0
+MinDec=0
+MinVal=0.
+MaxDec=0
+MaxVal=4294967295.
+Mask=256
+Offset=8
+Adaptive=0
+DispNumber=1
+HeightFactor=0.33333333333333337034
+[Signal 2]
+DispName=(GPIOA_IDR & 0x00000200) >> 9
+PlotType=0
+Color=32768
+ValHex=0
+MinDec=0
+MinVal=0.
+MaxDec=0
+MaxVal=4294967295.
+Mask=512
+Offset=9
+Adaptive=0
+DispNumber=2
+HeightFactor=0.33333333333333337034
+[Signal 3]
+DispName=(GPIOA_IDR & 0x00000400) >> 10
+PlotType=0
+Color=8388608
+ValHex=0
+MinDec=0
+MinVal=0.
+MaxDec=0
+MaxVal=4294967295.
+Mask=1024
+Offset=10
+Adaptive=0
+DispNumber=3
+HeightFactor=0.33333333333333331483

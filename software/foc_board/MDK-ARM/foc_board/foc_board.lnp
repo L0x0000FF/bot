@@ -39,7 +39,9 @@
 "foc_board\bsp_tim.o"
 "foc_board\bsp_time.o"
 "foc_board\bsp_adc.o"
+"foc_board\bsp_gpio.o"
 "foc_board\as5600.o"
+"foc_board\foc.o"
 "foc_board\can_rxtx.o"
 "foc_board\foc_driver.o"
 "foc_board\croutine.o"
@@ -52,6 +54,7 @@
 "foc_board\cmsis_os.o"
 "foc_board\heap_4.o"
 "foc_board\port.o"
+"..\Middlewares\ST\ARM\DSP\Lib\arm_cortexM3l_math.lib"
 --strict --scatter "foc_board\foc_board.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

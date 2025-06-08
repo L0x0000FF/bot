@@ -11,19 +11,41 @@ void BSP_TIM_Init() {
   tim_ports[0].phtim = &htim1;
   tim_ports[0].channel = TIM_CHANNEL_1;
 
-  tim_ports[1].phtim = &htim2;
+  tim_ports[1].phtim = &htim1;
   tim_ports[1].channel = TIM_CHANNEL_2;
 
-  tim_ports[2].phtim = &htim3;
-  tim_ports[2].channel = TIM_CHANNEL_1;
+  tim_ports[2].phtim = &htim1;
+  tim_ports[2].channel = TIM_CHANNEL_3;
 
-  tim_ports[3].phtim = &htim4;
-  tim_ports[3].channel = TIM_CHANNEL_2;
+  tim_ports[3].phtim = &htim2;
+  tim_ports[3].channel = TIM_CHANNEL_1;
+
+  tim_ports[4].phtim = &htim2;
+  tim_ports[4].channel = TIM_CHANNEL_2;
+
+  tim_ports[5].phtim = &htim3;
+  tim_ports[5].channel = TIM_CHANNEL_1;
+
+  tim_ports[6].phtim = &htim3;
+  tim_ports[6].channel = TIM_CHANNEL_2;
+
+  tim_ports[7].phtim = &htim3;
+  tim_ports[7].channel = TIM_CHANNEL_3;
+
+  // main frequency is 72MHz
+  htim1.Instance->PSC = 2 - 1; // Prescaler for 36MHz
+  htim1.Instance->ARR = 3600 - 1; // Auto-reload value for 10kHz
+  htim1.Instance->CCR1 = 1200 - 1; // Initial duty cycle
+  htim1.Instance->CCR2 = 1800 - 1; // Initial duty cycle
+  htim1.Instance->CCR3 = 2400 - 1; // Initial duty cycle
 
   // Initialize the call_back function as NULL
   for (int i = 0; i < TIM_CNT; ++i) {
     tim_ports[i].call_back = NULL;
   }
+  // BSP_TIM_PWM_Start(0); // Start PWM on TIM1 Channel 1
+  // BSP_TIM_PWM_Start(1); // Start PWM on TIM1 Channel 2 
+  // BSP_TIM_PWM_Start(2); // Start PWM on TIM1 Channel 3
 }
 
 uint32_t BSP_TIM_GetCount(uint8_t tim_id) {

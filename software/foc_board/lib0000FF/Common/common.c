@@ -1,5 +1,6 @@
 #include <common.h>
 #include <math.h>
+
 float invSqrt(float x) {
     float halfx = 0.5f * x;
     float y = x;

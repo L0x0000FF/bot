@@ -6,9 +6,11 @@
 #include "bsp_can.h"
 #include "bsp_i2c.h"
 #include "bsp_time.h"
+#include "bsp_tim.h"
 #include "cmsis_os.h"
 #include "string.h"
 #include "task.h"
+#include "can_rxtx.h"
 
 extern AS5600 as5600_1;
 extern AS5600 as5600_2;
@@ -20,6 +22,7 @@ osThreadId ADCTaskHandle;
 osThreadId EncoderTaskHandle;
 
 void BSP_init() {
+  BSP_TIM_Init();
   BSP_ADC_Init();
   BSP_I2C_Init();
   BSP_CAN_Init();
@@ -28,6 +31,7 @@ void BSP_init() {
   BSP_ADC_RegisterConvCpltCallback(0, adc_callback);
   osDelay(2);
   BSP_ADC_Start(0);
+  app_CAN_rxtx_init(voltage, ADC1_MAX_CHANNEL);
 }
 
 void communication_init() {}
@@ -73,4 +77,6 @@ void FOC_driver_init() {
               &EncoderTaskHandle);
 }
 
-void FOC_driver_main() {}
+void FOC_driver_main() {
+  app_CAN_rxtx_main();
+}

@@ -48,10 +48,12 @@ foc_board/foc_driver.o: ..\lib0000FF\APP\foc_driver.c \
   ..\lib0000FF\BSP\bsp_adc.h ..\Core\Inc\adc.h \
   ..\lib0000FF\BSP\bsp_can.h ..\Core\Inc\can.h \
   ..\lib0000FF\BSP\bsp_time.h ..\Core\Inc\tim.h \
+  ..\lib0000FF\BSP\bsp_tim.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
-  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h
+  ..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
+  ..\lib0000FF\APP\can_rxtx.h

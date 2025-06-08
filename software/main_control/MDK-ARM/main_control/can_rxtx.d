@@ -1,6 +1,7 @@
 main_control/can_rxtx.o: ..\lib0000FF\APP\can_rxtx.c \
-  ..\lib0000FF\APP\can_rxtx.h ..\lib0000FF\BSP\bsp_can.h \
-  ..\Core\Inc\can.h ..\Core\Inc\main.h \
+  ..\lib0000FF\APP\can_rxtx.h \
+  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\lib0000FF\BSP\bsp_can.h ..\Core\Inc\can.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -8,7 +9,6 @@ main_control/can_rxtx.o: ..\lib0000FF\APP\can_rxtx.c \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
-  D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \

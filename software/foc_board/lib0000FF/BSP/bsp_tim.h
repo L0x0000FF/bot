@@ -8,7 +8,7 @@
 
 #define TIM_MAIN_FREQ 72000000
 
-#define TIM_CNT 4
+#define TIM_CNT 8
 
 typedef void (*tim_callback)(uint8_t tim_id, uint8_t* data, uint32_t len);
 
