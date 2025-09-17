@@ -1,4 +1,4 @@
-foc_board/foc.o: ..\lib0000FF\HAL\FOC\foc.c ..\lib0000FF\HAL\FOC\foc.h \
+foc_board/foc.o: ..\lib0000FF\APP\FOC\foc.c ..\lib0000FF\APP\FOC\foc.h \
   D:\Code\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\lib0000FF\HAL\as5600.h ..\lib0000FF\BSP\bsp_i2c.h ..\Core\Inc\i2c.h \
   ..\Core\Inc\main.h ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \

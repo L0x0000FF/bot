@@ -17,7 +17,7 @@
                 "f:\\bot\\software\\foc_board\\Middlewares\\Third_Party\\FreeRTOS\\Source\\CMSIS_RTOS",
                 "f:\\bot\\software\\foc_board\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\RVDS\\ARM_CM3",
                 "f:\\bot\\software\\foc_board\\Middlewares\\ST\\ARM\\DSP\\Inc",
-                "f:\\bot\\software\\foc_board\\lib0000FF\\HAL\\FOC",
+                "f:\\bot\\software\\foc_board\\lib0000FF\\APP\\FOC",
                 "D:\\Code\\Keil\\ARM\\ARMCLANG\\include",
                 "D:\\Code\\Keil\\ARM\\ARMCLANG\\include\\arm_linux",
                 "D:\\Code\\Keil\\ARM\\ARMCLANG\\include\\arm_linux_compat",

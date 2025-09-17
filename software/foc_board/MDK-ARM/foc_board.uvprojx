@@ -82,7 +82,7 @@
           </BeforeMake>
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
-            <RunUserProg2>1</RunUserProg2>
+            <RunUserProg2>0</RunUserProg2>
             <UserProg1Name></UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
@@ -196,7 +196,7 @@
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
             <RoSelD>3</RoSelD>
-            <RwSelD>4</RwSelD>
+            <RwSelD>3</RwSelD>
             <CodeSel>0</CodeSel>
             <OptFeed>0</OptFeed>
             <NoZi1>0</NoZi1>
@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../lib0000FF;../lib0000FF/Common;../lib0000FF/BSP;../lib0000FF/HAL;../lib0000FF/APP;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Middlewares/ST/ARM/DSP/Inc;../lib0000FF/HAL/FOC</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../lib0000FF;../lib0000FF/Common;../lib0000FF/BSP;../lib0000FF/HAL;../lib0000FF/APP;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Middlewares/ST/ARM/DSP/Inc;..\lib0000FF\APP\FOC</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -682,6 +682,11 @@
               <FileType>1</FileType>
               <FilePath>..\lib0000FF\Common\vectors.c</FilePath>
             </File>
+            <File>
+              <FileName>low_pass_filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\Common\low_pass_filter.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -727,16 +732,16 @@
               <FileType>1</FileType>
               <FilePath>..\lib0000FF\HAL\as5600.c</FilePath>
             </File>
-            <File>
-              <FileName>foc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lib0000FF\HAL\FOC\foc.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>APP</GroupName>
           <Files>
+            <File>
+              <FileName>foc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\APP\FOC\foc.c</FilePath>
+            </File>
             <File>
               <FileName>can_rxtx.c</FileName>
               <FileType>1</FileType>
@@ -746,6 +751,11 @@
               <FileName>foc_driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lib0000FF\APP\foc_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>current_measure.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib0000FF\APP\FOC\current_measure.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1384,9 +1394,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>::CMSIS</GroupName>
-        </Group>
-        <Group>
           <GroupName>Middlewares/Library/DSP Library/DSP Library</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -1483,6 +1490,9 @@
               </FileOption>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>

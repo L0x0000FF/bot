@@ -24,6 +24,9 @@
     "bsp_gpio.h": "c",
     "foc.h": "c",
     "stdbool.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "current_measure.h": "c",
+    "vectors.h": "c",
+    "low_pass_filter.h": "c"
   }
 }

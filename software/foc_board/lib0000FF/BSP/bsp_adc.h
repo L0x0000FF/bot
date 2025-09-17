@@ -12,7 +12,7 @@
 typedef void (*adc_callback_conv_cplt_callback)(uint8_t adc_id, uint16_t* data);
 
 typedef struct BSP_ADCTypeDef_t {
-  ADC_HandleTypeDef* phadc;  // 自定义总线编号
+  ADC_HandleTypeDef* phadc;
   uint16_t buffer[ADC1_MAX_BUFFER][ADC1_MAX_CHANNEL];
   uint8_t cvt_ready;
   adc_callback_conv_cplt_callback callback;
